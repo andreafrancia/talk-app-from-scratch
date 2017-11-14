@@ -1,0 +1,71 @@
+Kata: app from scratch
+======================
+
+ - deliberate practice
+ - kata
+
+ - ad oggi ho fatto circa 40 ore di esercizio 
+
+ - sviluppo di un timer per la tecnica del pomodoro
+
+ - caratteristiche: sviluppata da zero
+ - caratteristiche: sviluppata interamente in TDD
+ - caratteristiche: applicazione da usare da linea di comando
+ - caratteristiche: lo storage è un file su disco (per semplificare)
+ - caratteristiche: è un'applicazione Ruby 
+ - caratteristiche: Vim come editor
+ - caratteristiche: RSpec come framework di test
+
+ - è una demo live: --> per piacere non parlatemi sul rosso
+
+L'applicazione
+--------------
+
+L'applicazione è un timer per la tecnica del pomodoro da usare da linea di 
+comando.
+
+L'applicazione si chiama `dingy` che in inglese dovrebbe voler dire 
+`disgostoso`.
+
+L'applicazione ha solo due semplici funzionalità: 
+
+   1) Avvio di un timebox
+   1) Vedere quanto tempo è rimasto
+
+Esempio di utilizzo
+
+   # start a timebox
+   $ bin/dingy --start    
+
+   # see the remaining time 
+   $ bin/dingy
+   24:59
+   
+   # after a while
+   $ bin/dingy
+   00:00
+
+Le tecnologie:
+--------------
+
+   - Ruby
+   - RSpec
+   - Vim
+
+Steps:
+------
+
+- README
+- il sistema di testing funziona?
+- come lancio un eseguibile?
+- come passo una variabile di ambiente?
+- come passo le info passando da file?
+- come formattare MM:SS?* 
+
+Le cose che dovremmo riuscire a vedere:
+
+- come usare i test automatici come se fossero una REPL (o un debugger)
+- come si scrivono i test quando c'è di mezzo il tempo che passa
+- refactor per rendere il codice estensibile
+
+eof
