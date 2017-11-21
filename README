@@ -1,36 +1,42 @@
 Kata: app from scratch
 ======================
 
- - deliberate practice
- - kata
+ - come funziona TDD quando è applicato sul lavoro?
+ - questa demo è un riassunto di quello che succede in uno sviluppo professionale in TDD
 
- - ad oggi ho fatto circa 40 ore di esercizio 
+ - questo è l'elenco delle cose che dovremmo riuscire a vedere:
+   - come si scrivono i test quando c'è di mezzo il tempo che passa
+   - refactor per rendere il codice estensibile (OCP)
+   - la scrittura del walking skeleton
+   - lo sviluppo di test bottom-up e lo sviluppo outside-in
+   - il pattern "enlarge test boundaries"
+   - il pattern "test as a REPL"
+   - il pattern "fake it 'til you make it"
 
- - sviluppo di un timer per la tecnica del pomodoro
+ - rispetto ad altri talk che potete aver visto su TDD
+   - è uno sviluppo da zero (si parte da git init, tutto il codice verrà sviluppato live)
+   - non è la risoluzione di un semplice kata -> è lo sviluppo di una applicazione
+   - è tutto sviluppato in TDD -> così potete farvi un'idea di come funziona sul lavoro
 
- - caratteristiche: sviluppata da zero
- - caratteristiche: sviluppata interamente in TDD
- - caratteristiche: applicazione da usare da linea di comando
- - caratteristiche: lo storage è un file su disco (per semplificare)
- - caratteristiche: è un'applicazione Ruby 
- - caratteristiche: Vim come editor
- - caratteristiche: RSpec come framework di test
+ - questa demo è il frutto di circa 50 ore di esercizio
+   - sono quasi due mesi che ogni giorno (feriale) dedico almeno un'ora a migliorare l'esercizio 
 
- - è una demo live: --> per piacere non parlatemi sul rosso
+ - tecnologie che usiamo
+   - Ruby come linguaggio
+   - RSpec come framework di test/spec
+   - Vim come editor
 
-L'applicazione
---------------
+ - l'applicazione da svilupare
+   - l'applicazione è una applicazione da linea di comando 
+   - il meccanismo di persistenza è il file (no DB)
+   - usa il tempo (nel senso che è un timer)
 
-L'applicazione è un timer per la tecnica del pomodoro da usare da linea di 
-comando.
-
-L'applicazione si chiama `dingy` che in inglese dovrebbe voler dire 
-`disgostoso`.
-
-L'applicazione ha solo due semplici funzionalità: 
-
-   1) Avvio di un timebox
-   1) Vedere quanto tempo è rimasto
+ - l'esercizio
+   - lo scopo è sviluppare un timer per la tecnica del pomodoro
+   - l'eseguibile si chiama `dingy`
+   - ha due feature: 
+      1) avvio di una timebox (da 25min)
+      2) mostrare quanto tempo manca alla fine della TimeBox
 
 Esempio di utilizzo
 
@@ -45,27 +51,13 @@ Esempio di utilizzo
    $ bin/dingy
    00:00
 
-Le tecnologie:
+Steps iniziali
 --------------
 
-   - Ruby
-   - RSpec
-   - Vim
-
-Steps:
-------
-
-- README
-- il sistema di testing funziona?
-- come lancio un eseguibile?
-- come passo una variabile di ambiente?
-- come passo le info passando da file?
-- come formattare MM:SS?* 
-
-Le cose che dovremmo riuscire a vedere:
-
-- come usare i test automatici come se fossero una REPL (o un debugger)
-- come si scrivono i test quando c'è di mezzo il tempo che passa
-- refactor per rendere il codice estensibile
+ - il sistema di testing funziona?
+ - come lancio un eseguibile?
+ - come passo una variabile di ambiente?
+ - come passo le info passando da file?
+ - come formattare MM:SS?* 
 
 eof
