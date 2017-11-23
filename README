@@ -30,8 +30,8 @@ Kata: app from scratch
      migliorare l'esercizio 
 
  - attenzione:
-   - questo demo è un riassunto, è uno sviluppo che potrei fare in una giornata
-     compresso in 45'
+   - questo demo è un riassunto, è uno sviluppo che potrei fare in una
+     giornata compresso in 45'
       - su alcune cose devo andare veloce 
       - e manca tutta una parte sul design emergente e sul listening dei test
       - per riuscire a spiegarvela dovrei farvi un corso di TDD
