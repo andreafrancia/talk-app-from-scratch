@@ -1,25 +1,40 @@
 Kata: app from scratch
 ======================
 
- - come funziona TDD quando è applicato sul lavoro?
- - questa demo è un riassunto di quello che succede in uno sviluppo professionale in TDD
+ - qual'è l'obiettivo di questo talk?
+   - lo scopo è dare una indicazione di come funziona TDD applicato sul lavoro
+
+ - a chi è rivolto?
+   - alle persone che vorrebbero cominciare ad usare in modo professionale TDD
+      - e sono curiose di sapere come dovrebbe funzionare
+   - alle persone che usano già sul TDD in modo professionale 
+      - e vogliono confrontarsi con gli altri
+
+ - rispetto ad altri talk che potete aver visto su TDD
+   - è uno sviluppo da zero (si parte da una directory vuota, tutto il codice
+     verrà sviluppato live)
+   - non è la risoluzione di un semplice kata -> è lo sviluppo di una
+     applicazione
 
  - questo è l'elenco delle cose che dovremmo riuscire a vedere:
    - come si scrivono i test quando c'è di mezzo il tempo che passa
-   - refactor per rendere il codice estensibile (OCP)
+   - refactor per rendere il codice estensibile (l'embrione di OCP)
    - la scrittura del walking skeleton
    - lo sviluppo di test bottom-up e lo sviluppo outside-in
    - il pattern "enlarge test boundaries"
    - il pattern "test as a REPL"
    - il pattern "fake it 'til you make it"
 
- - rispetto ad altri talk che potete aver visto su TDD
-   - è uno sviluppo da zero (si parte da git init, tutto il codice verrà sviluppato live)
-   - non è la risoluzione di un semplice kata -> è lo sviluppo di una applicazione
-   - è tutto sviluppato in TDD -> così potete farvi un'idea di come funziona sul lavoro
-
  - questa demo è il frutto di circa 50 ore di esercizio
-   - sono quasi due mesi che ogni giorno (feriale) dedico almeno un'ora a migliorare l'esercizio 
+   - sono quasi due mesi che ogni giorno (feriale) dedico almeno un'ora a
+     migliorare l'esercizio 
+
+ - attenzione:
+   - questo demo è un riassunto, è uno sviluppo che potrei fare in una giornata
+     compresso in 45'
+      - su alcune cose devo andare veloce 
+      - e manca tutta una parte sul design emergente e sul listening dei test
+      - per riuscire a spiegarvela dovrei farvi un corso di TDD
 
  - tecnologie che usiamo
    - Ruby come linguaggio
@@ -51,13 +66,24 @@ Esempio di utilizzo
    $ bin/dingy
    00:00
 
-Steps iniziali
---------------
+Riassunto del talk
+------------------
 
  - il sistema di testing funziona?
+   - ricordarsi di fare vedere bene le due schermate
+   - fare vedere con il mouse dove si trova failure
+   - fare vedere con il mouse dove si vede che passa
  - come lancio un eseguibile?
  - come passo una variabile di ambiente?
  - come passo le info passando da file?
- - come formattare MM:SS?* 
+ - come formattare MM:SS?
+ - wiring della logica sviluppata con test di unità nell'eseguibile
+ - refactor dei test di integrazione per supportare comandi diversi
+ - test del --start che non scrive output
+ - test del --start che crea un file
+ - attenzione non è rosso
+ - test del --start che scrive nel file il valore giusto
+ - prova dell'eseguibile
+ - aggiunta della lettura di 'now' dal sistema
 
 eof
